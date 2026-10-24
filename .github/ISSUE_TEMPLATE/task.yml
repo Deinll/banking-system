@@ -1,0 +1,31 @@
+name: Task
+description: A technical task, usually a sub-issue of a story
+title: "[BE] <action>"
+labels: ["type: task"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Backend, Frontend, DevOps, QA, Docs]
+    validations:
+      required: true
+  - type: input
+    id: parent
+    attributes:
+      label: Parent story
+      placeholder: "#12 (US-11)"
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be done
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] …
+        - [ ] Tests added (TC-…)
+        - [ ] Docs updated if needed

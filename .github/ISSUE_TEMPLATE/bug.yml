@@ -1,0 +1,45 @@
+name: Bug
+description: Something does not work as specified
+title: "[BUG] <short description>"
+labels: ["type: bug"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical (money incorrect / security)
+        - Major
+        - Minor
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected (with reference to requirement / BR if possible)
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment and version
+      placeholder: "demo v0.3.0, Chrome 130"
+  - type: input
+    id: trace
+    attributes:
+      label: traceId (from error message or response header)

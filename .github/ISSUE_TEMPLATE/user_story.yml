@@ -1,0 +1,51 @@
+name: User story
+description: A user-facing feature (US-nn from docs/02-requirements.md)
+title: "US-nn: <story name>"
+labels: ["type: story"]
+body:
+  - type: input
+    id: story-id
+    attributes:
+      label: Story ID
+      placeholder: US-11
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      value: |
+        As a <role>,
+        I want <goal>,
+        so that <benefit>.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Copy from docs/02-requirements.md as a checklist.
+      value: |
+        - [ ] Given … when … then …
+        - [ ] …
+    validations:
+      required: true
+  - type: input
+    id: references
+    attributes:
+      label: Requirements / rules / tests
+      placeholder: "FR-TRX-02, BR-09…18, TC-23…29"
+  - type: textarea
+    id: api
+    attributes:
+      label: API & data
+      description: Endpoints (docs/05) and entities (docs/03) involved.
+      placeholder: "T1 POST /transfers, TransactionDto"
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks (create as sub-issues)
+      value: |
+        - [BE] …
+        - [FE] …
+        - [QA] …
