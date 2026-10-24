@@ -91,9 +91,9 @@ The MVP is the smallest version in which a customer can **register, get an accou
 
 | Member | Primary role | Responsibilities |
 |---|---|---|
-| _TBD_ | Backend developer | Spring Boot API, database, business logic, backend unit tests |
-| _TBD_ | Frontend developer | Angular application, UX, frontend unit tests |
-| _TBD_ | QA / DevOps engineer | CI/CD, Docker, deployment, integration & e2e tests, test strategy, release |
+| Hryhorii Martynkian | Backend developer | Spring Boot API, database, business logic, backend unit tests |
+| Marko Zhenchuk | Frontend developer | Angular application, UX, frontend unit tests |
+| Kateryna Valentyuk | QA / DevOps engineer | CI/CD, Docker, deployment, integration & e2e tests, test strategy, release |
 
 Team members: **Marko Zhenchuk, Hryhorii Martynkian, Kateryna Valentyuk** — fill in the table above.
 
