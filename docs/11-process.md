@@ -47,7 +47,7 @@ Epics are issues with label `type: epic` and sub-issues; stories are sub-issues 
 | Priority | single select | P0 (blocker), P1 (high), P2 (normal), P3 (low) |
 | Size | single select | 1, 2, 3, 5, 8 (story points; 8 = should be split) |
 | Sprint | iteration (2 weeks) | Sprint 1 … Sprint 5 |
-| Epic | single select or parent issue | E1 … E10 |
+
 
 **Views:** Board (current sprint), Backlog table (grouped by Epic), My work (filter `assignee:@me`), Roadmap (by Sprint).
 
