@@ -1,68 +1,33 @@
-# System Bankowy 
-## 1. Wizja projektu
+# Trio Bank
 
-Celem projektu jest stworzenie systemu bankowego, który umożliwia użytkownikom zarządzanie kontem bankowym oraz wykonywanie podstawowych operacji finansowych w prosty i bezpieczny sposób.
+Educational simulation of a Polish retail bank — accounts, transfers, ATM, interest and an admin panel — built with Java / Spring Boot, PostgreSQL and Angular.
 
-System ma zapewniać wygodny dostęp do informacji o koncie, historii transakcji oraz aktualnym saldzie.
+> ⚠️ Educational project. No real money, no real personal data.
 
-## 2. Propozycja wartości
+**Team:** Marko Zhenchuk · Hryhorii Martynkian · Kateryna Valentyuk
 
-System bankowy zapewnia użytkownikom możliwość samodzielnego zarządzania finansami w jednym miejscu.
+## Documentation
 
-### Główne wartości projektu:
+Everything about the project — requirements, data model, API contract, architecture, process and roadmap — is in [`/docs`](docs/README.md).
 
-Łatwe zarządzanie kontem bankowym.
-Szybki dostęp do informacji o saldzie.
-Możliwość wykonywania podstawowych operacji finansowych.
-Przejrzysta historia transakcji.
-Bezpieczeństwo danych użytkowników.
-Intuicyjna i prosta obsługa systemu.
-## 3. Wymagania funkcjonalne
+## Running locally
 
-### System powinien umożliwiać:
+```bash
+cp .env.example .env
+docker compose up --build
+```
 
-Rejestrację i logowanie użytkowników.
-Tworzenie i przeglądanie kont bankowych.
-Sprawdzanie aktualnego salda konta.
-Wpłacanie środków na konto.
-Wypłacanie środków z konta.
-Przelewanie pieniędzy pomiędzy kontami.
-Przeglądanie historii transakcji.
-Sprawdzanie poprawności danych wprowadzanych przez użytkownika.
-## 4. Wymagania niefunkcjonalne
-- *Bezpieczeństwo*: ochrona danych użytkowników i kontrola dostępu do kont.
-- *Użyteczność*: prosty i intuicyjny interfejs.
-- *Niezawodność*: poprawne przetwarzanie operacji finansowych.
-- *Spójność danych*: saldo powinno być aktualizowane po każdej poprawnie wykonanej transakcji.
-- *Wydajność*: podstawowe operacje powinny być wykonywane w krótkim czasie.
-## 5. User Stories
-Jako użytkownik chcę się zarejestrować, aby móc korzystać z systemu bankowego.
-Jako użytkownik chcę się zalogować, aby uzyskać dostęp do swojego konta.
-Jako klient banku chcę sprawdzić saldo, aby wiedzieć, ile pieniędzy posiadam.
-Jako klient banku chcę wpłacać pieniądze na konto, aby zwiększać dostępne środki.
-## 6. MVP (Minimum Viable Product)
+- Frontend: http://localhost:4200
+- Backend API: http://localhost:8080/api/v1
+- Swagger UI: http://localhost:8080/swagger-ui.html
 
-MVP to minimalna wersja systemu, która zawiera najważniejsze funkcje umożliwiające korzystanie z aplikacji.
+Details: [docs/10-devops.md](docs/10-devops.md#8-local-development).
 
-### Funkcje MVP:
+## Repository layout
 
-Rejestracja i logowanie użytkownika.
-Utworzenie konta bankowego.
-Wyświetlanie aktualnego salda.
-Historia podstawowych transakcji.
-
-
-## 7. Zakres projektu
-
-Projekt ma charakter edukacyjny i służy do zaprezentowania podstawowych mechanizmów działania systemu bankowego. Nie jest przeznaczony do obsługi rzeczywistych środków finansowych.
-
-## 8. Status projektu
-
-Projekt jest w fazie planowania i analizy wymagań.
-
-## 9. Zespół projektowy
-Członkowie zespołu:
-
-## 10. Technologie
-
-Technologie i narzędzia zostaną określone przez zespół projektowy.
+| Folder | Content |
+|---|---|
+| `backend/` | Spring Boot API |
+| `frontend/` | Angular application |
+| `e2e/` | Playwright tests |
+| `docs/` | Project documentation |
